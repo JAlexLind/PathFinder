@@ -106,6 +106,21 @@ subgraph cluster_skill_feats
   "Stealthy"
 }
 
+subgraph cluster_archery_feats
+{
+  label=<<U>Archery Combat Feats</U>>
+  node [fillcolor=lightpink]
+
+  "Clustered Shots" [label=<\N<BR/>BAB +6>]
+  "Deadly Aim" [label=<\N<BR/>DEX 13<BR/>BAB +1>]
+  "Improved Precise Shot" [label=<\N<BR/>DEX 19<BR/>BAB +11>]
+  "Manyshot" [label=<\N<BR/>BAB +6>]
+  "Point-Blank Shot"
+  "Precise Shot"
+  "Rapid Shot"
+  "Point-Blank Master" [label=<\N<BR/>Fighter 4>]
+}
+
 subgraph combat_feats
 {
   label=<<U>Combat Feats</U>>
@@ -123,7 +138,6 @@ subgraph combat_feats
   "Bull Rush"
   "Cleave"
   "Cleaving Finish"
-  "Clustered Shots" [label=<\N<BR/>BAB +6>]
   "Combat Expertise" [label=<\N<BR/>INT 13>]
   "Combat Mobility" [label=<\N<BR/>DEX 13>]
   "Combat Reflexes"
@@ -133,7 +147,6 @@ subgraph combat_feats
   "Crushing Blow"
   "Dazzling Display"
   "Defensive Combat Training"
-  "Deadly Aim" [label=<\N<BR/>DEX 13<BR/>BAB +1>]
   "Deflect Arrows" [label=<\N<BR/>DEX 13>]
   "Dirty Trick" [label=<\N<BR/>INT 13>]
   "Disarm" [label=<\N<BR/>INT 13>]
@@ -162,18 +175,12 @@ subgraph combat_feats
   "Improved Unarmed Strike"
   "Improved Cleaving Finish" [label=<\N<BR/>BAB +6>]
   "Improved Critical" [label=<\N<BR/>BAB +8>]
-  "Improved Precise Shot" [label=<\N<BR/>DEX 19<BR/>BAB +11>]
   "Improved Two-Weapon Fighting" [label=<\N<BR/>DEX 17<BR/>BAB +6>]
   "Improved Vital Strike" [label=<\N<BR/>BAB +11>]
-  "Manyshot" [label=<\N<BR/>BAB +6>]
   "Missile Shield" [label=<\N<BR/>DEX 13>]
   "Penetrating Strike" [label=<\N<BR/>Fighter 12>]
   "Piranha Strike" [label=<\N<BR/>DEX 13>]
-  "Point-Blank Master" [label=<\N<BR/>Fighter 4>]
-  "Point-Blank Shot"
-  "Precise Shot"
   "Power Attack" [label=<\N<BR/>STR 13>]
-  "Rapid Shot"
   "Shatter Defenses" [label=<\N<BR/>BAB +6>]
   "Shield Bash"
   "Shield Focus"
@@ -183,8 +190,8 @@ subgraph combat_feats
   "Staggering Critical" [label=<\N<BR/>BAB +13>]
   "Sunder Armor" [label=<\N<BR/>STR 13>]
   "Stunning Fist"
-  "Tiring Critical" [label=<\N<BR/>BAB +13>]
   "Throw Anything"
+  "Tiring Critical" [label=<\N<BR/>BAB +13>]
   "Trip" [label=<\N<BR/>INT 13>]
   "Two-Weapon Fighting" [label=<\N<BR/>DEX 15>]
   "Tower Shield Proficiency"
