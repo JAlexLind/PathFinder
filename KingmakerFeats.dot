@@ -4,8 +4,7 @@ digraph KingmakerFeats
   rankdir=LR
   node [shape=rectangle, color=black, style=filled, fillcolor=transparent]
 
-//subgraph cluster_teamwork_feats
-subgraph teamwork_feats
+subgraph cluster_teamwork_feats
 {
   label=<<U>Teamwork Feats</U>>
   node [fillcolor=orchid]
@@ -23,11 +22,29 @@ subgraph teamwork_feats
   "Tandem Trip"
 }
 
-//subgraph cluster_metamagic_feats
-subgraph metamagic_feats
+subgraph cluster_spellcasting_feats
+{
+  label=<<U>Spellcasting Feats</U>>
+  node [fillcolor=lightblue]
+
+  "Elemental Focus"
+  "Greater Elemental Focus"
+  "Spell Focus"
+  "Greater Spell Focus"
+  "Spell Specialization"
+  "Spell Penetration"
+  "Greater Spell Penetration"
+
+  "Augment Summoning"
+  "Superior Summoning"
+}
+
+subgraph cluster_metamagic_feats
 {
   label=<<U>Metamagic Feats</U>>
   node [fillcolor=lightblue]
+
+  "Combat Casting"
 
   "Metamagic (Empower Spell)"
   "Metamagic (Extend Spell)"
@@ -37,23 +54,29 @@ subgraph metamagic_feats
   "Metamagic (Reach Spell)"
 }
 
-//subgraph cluster_general_feats
-subgraph general_feats
+subgraph cluster_survival_feats
 {
-  label=<<U>General Feats</U>>
+  label=<<U>Survival Feats</U>>
+  node [fillcolor=lightgreen]
+
+  "Great Fortitude"
+  "Improved Great Fortitude"
+  "Iron Will"
+  "Improved Iron Will"
+  "Lightning Reflexes"
+  "Improved Lightning Reflexes"
+  "Diehard"
+  "Toughness"
+}
+
+subgraph cluster_class_features
+{
+  label=<<U>Class Feature Feats</U>>
   node [fillcolor=lightgreen]
 
   "Ability Focus - Bombs"
   "Accomplished Sneak Attacker"
-  "Alertness"
-  "Augment Summoning"
   "Boon Companion"
-  "Combat Casting"
-  "Deceitful"
-  "Deft Hands"
-  "Diehard"
-  "Elemental Focus"
-  "Endurance"
   "Extra Arcana"
   "Extra Arcane Pool"
   "Extra Bane Weapon"
@@ -63,30 +86,26 @@ subgraph general_feats
   "Extra Performance"
   "Extra Rage"
   "Extra Rage Power"
-  "Greater Elemental Focus"
-  "Great Fortitude"
-  "Greater Spell Focus"
-  "Greater Spell Penetration"
-  "Improved Initiative"
-  "Intimidating Prowess"
-  "Iron Will"
-  "Improved Great Fortitude"
-  "Improved Iron Will"
-  "Improved Lightning Reflexes"
-  "Lightning Reflexes"
   "Natural Spell" [label=<Natural Spell<BR/>WIS 13>]
-  "Persuasive"
   "Selective Channel" [label=<Selective Channel<BR/>CHA 13>]
-  "Skill Focus"
-  "Spell Focus"
-  "Spell Penetration"
-  "Spell Specialization"
-  "Stealthy"
-  "Superior Summoning"
-  "Toughness"
 }
 
-//subgraph cluster_combat_feats
+subgraph cluster_skill_feats
+{
+  label=<<U>Skill Feats</U>>
+  node [fillcolor=lightgreen]
+
+  "Alertness"
+  "Deceitful"
+  "Deft Hands"
+  "Endurance"
+  "Improved Initiative"
+  "Intimidating Prowess"
+  "Persuasive"
+  "Skill Focus"
+  "Stealthy"
+}
+
 subgraph combat_feats
 {
   label=<<U>Combat Feats</U>>
