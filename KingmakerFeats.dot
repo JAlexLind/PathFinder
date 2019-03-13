@@ -29,22 +29,19 @@ subgraph cluster_spellcasting_feats
 
   "Elemental Focus"
   "Greater Elemental Focus"
+  "Combat Casting"
   "Spell Focus"
   "Greater Spell Focus"
   "Spell Specialization"
+  "Arcane Strike" [fillcolor=lightpink]
   "Spell Penetration"
   "Greater Spell Penetration"
 
   "Augment Summoning"
   "Superior Summoning"
-}
 
-subgraph cluster_metamagic_feats
-{
-  label=<<U>Metamagic Feats</U>>
-  node [fillcolor=lightblue]
-
-  "Combat Casting"
+  "Arcane Armor Training"
+  "Arcane Armor Mastery"
 
   "Metamagic (Empower Spell)"
   "Metamagic (Extend Spell)"
@@ -108,7 +105,7 @@ subgraph cluster_skill_feats
 
 subgraph cluster_archery_feats
 {
-  label=<<U>Archery Combat Feats</U>>
+  label=<<U>Archery Feats</U>>
   node [fillcolor=lightpink]
 
   "Clustered Shots" [label=<\N<BR/>BAB +6>]
@@ -128,9 +125,6 @@ subgraph combat_feats
 
   "Agile Maneuvers"
   "Aldori Dueling Mastery" [label=<\N<BR/>DEX 13>]
-  "Arcane Armor Training"
-  "Arcane Armor Mastery"
-  "Arcane Strike"
   "Armor Focus" [label=<\N<BR/>BAB +1>]
   "Bashing Finish" [label=<\N<BR/>BAB +11>]
   "Blind Fight"
