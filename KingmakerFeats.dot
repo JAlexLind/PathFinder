@@ -195,6 +195,11 @@ subgraph combat_feats
   "Weapon Specialization" [label=<\N<BR/>Fighter 4>]
 }
 
+"Shield Proficiency" [label=<Shield<BR/>Proficiency>, fillcolor=lightgrey, shape=octagon]
+"Shield Proficiency" -> "Tower Shield Proficiency"
+"Shield Proficiency" -> "Shield Focus"
+"Shield Proficiency" -> "Shield Bash"
+
 //"Critical Focus" -> "Critical Mastery"
 "Blinding Critical" -> "Critical Mastery"
 "Exhausting Critical" -> "Critical Mastery"
