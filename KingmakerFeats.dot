@@ -13,8 +13,8 @@ subgraph cluster_teamwork_feats
   "Back to Back"
   "Coordinated Defense"
   "Coordinated Maneuvers"
-  "Outflank" [label=<Outflank<BR/>BAB +4>]
-  "Precise Strike" [label=<Precise Strike<BR/>DEX 13<BR/>BAB +1>]
+  "Outflank" [label=<\N<BR/>BAB +4>]
+  "Precise Strike" [label=<\N<BR/>DEX 13<BR/>BAB +1>]
   "Seize the Moment"
   "Shake it Off"
   "Shield Wall"
@@ -86,8 +86,8 @@ subgraph cluster_class_features
   "Extra Performance"
   "Extra Rage"
   "Extra Rage Power"
-  "Natural Spell" [label=<Natural Spell<BR/>WIS 13>]
-  "Selective Channel" [label=<Selective Channel<BR/>CHA 13>]
+  "Natural Spell" [label=<\N<BR/>WIS 13>]
+  "Selective Channel" [label=<\N<BR/>CHA 13>]
 }
 
 subgraph cluster_skill_feats
@@ -112,86 +112,86 @@ subgraph combat_feats
   node [fillcolor=lightpink]
 
   "Agile Maneuvers"
-  "Aldori Dueling Mastery" [label=<Aldori Dueling Mastery<BR/>DEX 13>]
+  "Aldori Dueling Mastery" [label=<\N<BR/>DEX 13>]
   "Arcane Armor Training"
   "Arcane Armor Mastery"
   "Arcane Strike"
-  "Armor Focus" [label=<Armor Focus<BR/>BAB +1>]
-  "Bashing Finish" [label=<Bashing Finish<BR/>BAB +11>]
+  "Armor Focus" [label=<\N<BR/>BAB +1>]
+  "Bashing Finish" [label=<\N<BR/>BAB +11>]
   "Blind Fight"
-  "Blinding Critical" [label=<Blinding Critical<BR/>BAB +15>]
+  "Blinding Critical" [label=<\N<BR/>BAB +15>]
   "Bull Rush"
   "Cleave"
   "Cleaving Finish"
-  "Clustered Shots" [label=<Clustered Shots<BR/>BAB +6>]
-  "Combat Expertise" [label=<Combat Expertise<BR/>INT 13>]
-  "Combat Mobility" [label=<Combat Mobility<BR/>DEX 13>]
+  "Clustered Shots" [label=<\N<BR/>BAB +6>]
+  "Combat Expertise" [label=<\N<BR/>INT 13>]
+  "Combat Mobility" [label=<\N<BR/>DEX 13>]
   "Combat Reflexes"
-  "Cornugon Smash" [label=<Cornugon Smash<BR/>Persuasion 6>]
-  "Critical Focus" [label=<Critical Focus<BR/>BAB +9>]
-  "Critical Mastery" [label=<Critical Mastery<BR/>Fighter 14>]
+  "Cornugon Smash" [label=<\N<BR/>Persuasion 6>]
+  "Critical Focus" [label=<\N<BR/>BAB +9>]
+  "Critical Mastery" [label=<\N<BR/>Fighter 14>]
   "Crushing Blow"
   "Dazzling Display"
   "Defensive Combat Training"
-  "Deadly Aim" [label=<Deadly Aim<BR/>DEX 13<BR/>BAB +1>]
-  "Deflect Arrows" [label=<Deflect Arrows<BR/>DEX 13>]
-  "Dirty Trick" [label=<Dirty Trick<BR/>INT 13>]
-  "Disarm" [label=<Disarm<BR/>INT 13>]
-  "Dodge" [label=<Dodge<BR/>DEX 13>]
-  "Double Slice" [label=<Double Slice<BR/>DEX 15>]
-  "Dreadful Carnage" [label=<Dreadful Carnage<BR/>STR 15<BR/>BAB +11>]
-  "Exhausting Critical" [label=<Exhausting Critical<BR/>BAB +15>]
-  "Exotic Weapon Proficiency" [label=<Exotic Weapon Proficiency<BR/>BAB +1>]
-  "Fencing Grace" [label=<Fencing Grace<BR/>DEX 13>]
+  "Deadly Aim" [label=<\N<BR/>DEX 13<BR/>BAB +1>]
+  "Deflect Arrows" [label=<\N<BR/>DEX 13>]
+  "Dirty Trick" [label=<\N<BR/>INT 13>]
+  "Disarm" [label=<\N<BR/>INT 13>]
+  "Dodge" [label=<\N<BR/>DEX 13>]
+  "Double Slice" [label=<\N<BR/>DEX 15>]
+  "Dreadful Carnage" [label=<\N<BR/>STR 15<BR/>BAB +11>]
+  "Exhausting Critical" [label=<\N<BR/>BAB +15>]
+  "Exotic Weapon Proficiency" [label=<\N<BR/>BAB +1>]
+  "Fencing Grace" [label=<\N<BR/>DEX 13>]
   "Fury's Fall"
-  "Great Cleave" [label=<Great Cleave<BR/>STR 13>]
-  "Greater Blind Fight" [label=<Greater Blind Fight<BR/>Perception 15>]
-  "Greater Bull Rush" [label=<Greater Bull Rush<BR/>STR 13<BR/>BAB +6>]
-  "Greater Dirty Trick" [label=<Greater Dirty Trick<BR/>INT 13<BR/>BAB +6>]
-  "Greater Disarm" [label=<Greater Disarm<BR/>INT 13<BR/>BAB +6>]
-  "Greater Penetrating Strike" [label=<Greater Penetrating Strike<BR/>Fighter 16>]
-  "Greater Shield Focus" [label=<Greater Shield Focus<BR/>Fighter 8>]
-  "Greater Sunder Armor" [label=<Greater Sunder Armor<BR/>STR 13<BR/>BAB +6>]
-  "Greater Trip" [label=<Greater Trip<BR/>INT 13<BR/>BAB +6>]
-  "Greater Two-Weapon Fighting" [label=<Greater Two-Weapon Fighting<BR/>DEX 19<BR/>BAB +11>]
-  "Greater Vital Strike" [label=<Greater Vital Strike<BR/>BAB +16>]
-  "Greater Weapon Focus" [label=<Greater Weapon Focus<BR/>Fighter 8>]
-  "Greater Weapon Specialization" [label=<Greater Weapon Specialization<BR/>Fighter 8>]
-  "Hammer the Gap" [label=<Hammer the Gap<BR/>BAB +6>]
-  "Improved Blind Fight" [label=<Improved Blind Fight<BR/>Perception 10>]
+  "Great Cleave" [label=<\N<BR/>STR 13>]
+  "Greater Blind Fight" [label=<\N<BR/>Perception 15>]
+  "Greater Bull Rush" [label=<\N<BR/>STR 13<BR/>BAB +6>]
+  "Greater Dirty Trick" [label=<\N<BR/>INT 13<BR/>BAB +6>]
+  "Greater Disarm" [label=<\N<BR/>INT 13<BR/>BAB +6>]
+  "Greater Penetrating Strike" [label=<\N<BR/>Fighter 16>]
+  "Greater Shield Focus" [label=<\N<BR/>Fighter 8>]
+  "Greater Sunder Armor" [label=<\N<BR/>STR 13<BR/>BAB +6>]
+  "Greater Trip" [label=<\N<BR/>INT 13<BR/>BAB +6>]
+  "Greater Two-Weapon Fighting" [label=<\N<BR/>DEX 19<BR/>BAB +11>]
+  "Greater Vital Strike" [label=<\N<BR/>BAB +16>]
+  "Greater Weapon Focus" [label=<\N<BR/>Fighter 8>]
+  "Greater Weapon Specialization" [label=<\N<BR/>Fighter 8>]
+  "Hammer the Gap" [label=<\N<BR/>BAB +6>]
+  "Improved Blind Fight" [label=<\N<BR/>Perception 10>]
   "Improved Unarmed Strike"
-  "Improved Cleaving Finish" [label=<Improved Cleaving Finish<BR/>BAB +6>]
-  "Improved Critical" [label=<Improved Critical<BR/>BAB +8>]
-  "Improved Precise Shot" [label=<Improved Precise Shot<BR/>DEX 19<BR/>BAB +11>]
-  "Improved Two-Weapon Fighting" [label=<Improved Two-Weapon Fighting<BR/>DEX 17<BR/>BAB +6>]
-  "Improved Vital Strike" [label=<Improved Vital Strike<BR/>BAB +11>]
-  "Manyshot" [label=<Manyshot<BR/>BAB +6>]
-  "Missile Shield" [label=<Missile Shield<BR/>DEX 13>]
-  "Penetrating Strike" [label=<Penetrating Strike<BR/>Fighter 12>]
-  "Piranha Strike" [label=<Piranha Strike<BR/>DEX 13>]
-  "Point-Blank Master" [label=<Point-Blank Master<BR/>Fighter 4>]
+  "Improved Cleaving Finish" [label=<\N<BR/>BAB +6>]
+  "Improved Critical" [label=<\N<BR/>BAB +8>]
+  "Improved Precise Shot" [label=<\N<BR/>DEX 19<BR/>BAB +11>]
+  "Improved Two-Weapon Fighting" [label=<\N<BR/>DEX 17<BR/>BAB +6>]
+  "Improved Vital Strike" [label=<\N<BR/>BAB +11>]
+  "Manyshot" [label=<\N<BR/>BAB +6>]
+  "Missile Shield" [label=<\N<BR/>DEX 13>]
+  "Penetrating Strike" [label=<\N<BR/>Fighter 12>]
+  "Piranha Strike" [label=<\N<BR/>DEX 13>]
+  "Point-Blank Master" [label=<\N<BR/>Fighter 4>]
   "Point-Blank Shot"
   "Precise Shot"
-  "Power Attack" [label=<Power Attack<BR/>STR 13>]
+  "Power Attack" [label=<\N<BR/>STR 13>]
   "Rapid Shot"
-  "Shatter Defenses" [label=<Shatter Defenses<BR/>BAB +6>]
+  "Shatter Defenses" [label=<\N<BR/>BAB +6>]
   "Shield Bash"
   "Shield Focus"
-  "Shield Master" [label=<Shield Master<BR/>BAB +11>]
-  "Sickening Critical" [label=<Sickening Critical<BR/>BAB +11>]
-  "Slashing Grace" [label=<Slashing Grace<BR/>DEX 13>]
-  "Staggering Critical" [label=<Staggering Critical<BR/>BAB +13>]
-  "Sunder Armor" [label=<Sunder Armor<BR/>STR 13>]
+  "Shield Master" [label=<\N<BR/>BAB +11>]
+  "Sickening Critical" [label=<\N<BR/>BAB +11>]
+  "Slashing Grace" [label=<\N<BR/>DEX 13>]
+  "Staggering Critical" [label=<\N<BR/>BAB +13>]
+  "Sunder Armor" [label=<\N<BR/>STR 13>]
   "Stunning Fist"
-  "Tiring Critical" [label=<Tiring Critical<BR/>BAB +13>]
+  "Tiring Critical" [label=<\N<BR/>BAB +13>]
   "Throw Anything"
-  "Trip" [label=<Trip<BR/>INT 13>]
-  "Two-Weapon Fighting" [label=<Two-Weapon Fighting<BR/>DEX 15>]
+  "Trip" [label=<\N<BR/>INT 13>]
+  "Two-Weapon Fighting" [label=<\N<BR/>DEX 15>]
   "Tower Shield Proficiency"
-  "Vital Strike" [label=<Vital Strike<BR/>BAB +6>]
+  "Vital Strike" [label=<\N<BR/>BAB +6>]
   "Weapon Finesse"
-  "Weapon Focus" [label=<Weapon Focus<BR/>BAB +1>]
-  "Weapon Specialization" [label=<Weapon Specialization<BR/>Fighter 4>]
+  "Weapon Focus" [label=<\N<BR/>BAB +1>]
+  "Weapon Specialization" [label=<\N<BR/>Fighter 4>]
 }
 
 //"Critical Focus" -> "Critical Mastery"
