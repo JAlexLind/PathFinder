@@ -201,6 +201,21 @@ subgraph cluster_weaponry_feats
   "Weapon Specialization" [label=<\N<BR/>Fighter 4>]
 }
 
+subgraph cluster_critical_feats
+{
+  label=<<U>Weaponry (Critical Hits)</U>>
+  node [fillcolor=lightpink]
+
+  "Critical Focus" [label=<\N<BR/>BAB +9>]
+  "Sickening Critical" [label=<\N<BR/>BAB +11>]
+  "Staggering Critical" [label=<\N<BR/>BAB +13>]
+  "Tiring Critical" [label=<\N<BR/>BAB +13>]
+  "Blinding Critical" [label=<\N<BR/>BAB +15>]
+  "Exhausting Critical" [label=<\N<BR/>BAB +15>]
+  "Critical Mastery" [label=<\N<BR/>Fighter 14>]
+  "Improved Critical" [label=<\N<BR/>BAB +8>]
+}
+
 subgraph combat_feats
 {
   label=<<U>Combat Feats</U>>
@@ -209,25 +224,17 @@ subgraph combat_feats
   "Agile Maneuvers"
   "Armor Focus" [label=<\N<BR/>BAB +1>]
   "Blind Fight"
-  "Blinding Critical" [label=<\N<BR/>BAB +15>]
   "Combat Reflexes"
-  "Critical Focus" [label=<\N<BR/>BAB +9>]
-  "Critical Mastery" [label=<\N<BR/>Fighter 14>]
   "Crushing Blow"
   "Defensive Combat Training"
   "Deflect Arrows" [label=<\N<BR/>DEX 13>]
-  "Exhausting Critical" [label=<\N<BR/>BAB +15>]
   "Greater Blind Fight" [label=<\N<BR/>Perception 15>]
   "Greater Vital Strike" [label=<\N<BR/>BAB +16>]
   "Hammer the Gap" [label=<\N<BR/>BAB +6>]
   "Improved Blind Fight" [label=<\N<BR/>Perception 10>]
   "Improved Unarmed Strike"
-  "Improved Critical" [label=<\N<BR/>BAB +8>]
   "Improved Vital Strike" [label=<\N<BR/>BAB +11>]
-  "Sickening Critical" [label=<\N<BR/>BAB +11>]
-  "Staggering Critical" [label=<\N<BR/>BAB +13>]
   "Stunning Fist"
-  "Tiring Critical" [label=<\N<BR/>BAB +13>]
   "Vital Strike" [label=<\N<BR/>BAB +6>]
 }
 
