@@ -185,6 +185,22 @@ subgraph cluster_shield_feats
 }
 }
 
+subgraph cluster_weaponry_feats
+{
+  label=<<U>Weaponry</U>>
+  node [fillcolor=lightpink]
+
+  "Dazzling Display"
+  "Exotic Weapon Proficiency" [label=<\N<BR/>BAB +1>]
+  "Greater Weapon Focus" [label=<\N<BR/>Fighter 8>]
+  "Greater Weapon Specialization" [label=<\N<BR/>Fighter 8>]
+  "Greater Penetrating Strike" [label=<\N<BR/>Fighter 16>]
+  "Penetrating Strike" [label=<\N<BR/>Fighter 12>]
+  "Shatter Defenses" [label=<\N<BR/>BAB +6>]
+  "Weapon Focus" [label=<\N<BR/>BAB +1>]
+  "Weapon Specialization" [label=<\N<BR/>Fighter 4>]
+}
+
 subgraph combat_feats
 {
   label=<<U>Combat Feats</U>>
@@ -198,30 +214,21 @@ subgraph combat_feats
   "Critical Focus" [label=<\N<BR/>BAB +9>]
   "Critical Mastery" [label=<\N<BR/>Fighter 14>]
   "Crushing Blow"
-  "Dazzling Display"
   "Defensive Combat Training"
   "Deflect Arrows" [label=<\N<BR/>DEX 13>]
   "Exhausting Critical" [label=<\N<BR/>BAB +15>]
-  "Exotic Weapon Proficiency" [label=<\N<BR/>BAB +1>]
   "Greater Blind Fight" [label=<\N<BR/>Perception 15>]
-  "Greater Penetrating Strike" [label=<\N<BR/>Fighter 16>]
   "Greater Vital Strike" [label=<\N<BR/>BAB +16>]
-  "Greater Weapon Focus" [label=<\N<BR/>Fighter 8>]
-  "Greater Weapon Specialization" [label=<\N<BR/>Fighter 8>]
   "Hammer the Gap" [label=<\N<BR/>BAB +6>]
   "Improved Blind Fight" [label=<\N<BR/>Perception 10>]
   "Improved Unarmed Strike"
   "Improved Critical" [label=<\N<BR/>BAB +8>]
   "Improved Vital Strike" [label=<\N<BR/>BAB +11>]
-  "Penetrating Strike" [label=<\N<BR/>Fighter 12>]
-  "Shatter Defenses" [label=<\N<BR/>BAB +6>]
   "Sickening Critical" [label=<\N<BR/>BAB +11>]
   "Staggering Critical" [label=<\N<BR/>BAB +13>]
   "Stunning Fist"
   "Tiring Critical" [label=<\N<BR/>BAB +13>]
   "Vital Strike" [label=<\N<BR/>BAB +6>]
-  "Weapon Focus" [label=<\N<BR/>BAB +1>]
-  "Weapon Specialization" [label=<\N<BR/>Fighter 4>]
 }
 
 "Shield Proficiency" -> "Tower Shield Proficiency"
