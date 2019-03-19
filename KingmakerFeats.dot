@@ -6,7 +6,7 @@ digraph KingmakerFeats
 
 subgraph cluster_teamwork_feats
 {
-  label=<<U>Teamwork Feats</U>>
+  label=<<U>Teamwork</U>>
   node [fillcolor=orchid]
 
   "Allied Spellcaster"
@@ -24,7 +24,7 @@ subgraph cluster_teamwork_feats
 
 subgraph cluster_spellcasting_feats
 {
-  label=<<U>Spellcasting Feats</U>>
+  label=<<U>Spellcasting</U>>
   node [fillcolor=lightblue]
 
   "Elemental Focus"
@@ -53,7 +53,7 @@ subgraph cluster_spellcasting_feats
 
 subgraph cluster_survival_feats
 {
-  label=<<U>Survival Feats</U>>
+  label=<<U>Survival</U>>
   node [fillcolor=lightgreen]
 
   "Great Fortitude"
@@ -68,7 +68,7 @@ subgraph cluster_survival_feats
 
 subgraph cluster_class_features
 {
-  label=<<U>Class Feature Feats</U>>
+  label=<<U>Class Features</U>>
   node [fillcolor=lightgreen]
 
   "Ability Focus - Bombs"
@@ -89,7 +89,7 @@ subgraph cluster_class_features
 
 subgraph cluster_skill_feats
 {
-  label=<<U>Skill Feats</U>>
+  label=<<U>Skills</U>>
   node [fillcolor=lightgreen]
 
   "Alertness"
@@ -105,7 +105,7 @@ subgraph cluster_skill_feats
 
 subgraph cluster_archery_feats
 {
-  label=<<U>Archery Feats</U>>
+  label=<<U>Archery</U>>
   node [fillcolor=lightpink]
 
   "Clustered Shots" [label=<\N<BR/>BAB +6>]
@@ -115,7 +115,74 @@ subgraph cluster_archery_feats
   "Point-Blank Shot"
   "Precise Shot"
   "Rapid Shot"
+  "Throw Anything"
   "Point-Blank Master" [label=<\N<BR/>Fighter 4>]
+}
+
+subgraph cluster_int_combat_feats
+{
+  label=<<U>Melee (Tactical)</U>>
+  node [fillcolor=lightpink]
+
+  "Combat Expertise" [label=<\N<BR/>INT 13>]
+  "Dirty Trick" [label=<\N<BR/>INT 13>]
+  "Disarm" [label=<\N<BR/>INT 13>]
+  "Fury's Fall"
+  "Greater Dirty Trick" [label=<\N<BR/>INT 13<BR/>BAB +6>]
+  "Greater Disarm" [label=<\N<BR/>INT 13<BR/>BAB +6>]
+  "Greater Trip" [label=<\N<BR/>INT 13<BR/>BAB +6>]
+  "Trip" [label=<\N<BR/>INT 13>]
+}
+
+subgraph cluster_str_combat_feats
+{
+  label=<<U>Melee (Brute Force)</U>>
+  node [fillcolor=lightpink]
+
+  "Bull Rush"
+  "Cleave"
+  "Cleaving Finish"
+  "Cornugon Smash" [label=<\N<BR/>Persuasion 6>]
+  "Dreadful Carnage" [label=<\N<BR/>STR 15<BR/>BAB +11>]
+  "Great Cleave" [label=<\N<BR/>STR 13>]
+  "Greater Bull Rush" [label=<\N<BR/>STR 13<BR/>BAB +6>]
+  "Greater Sunder Armor" [label=<\N<BR/>STR 13<BR/>BAB +6>]
+  "Improved Cleaving Finish" [label=<\N<BR/>BAB +6>]
+  "Power Attack" [label=<\N<BR/>STR 13>]
+  "Sunder Armor" [label=<\N<BR/>STR 13>]
+}
+
+subgraph cluster_dex_combat_feats
+{
+  label=<<U>Melee (Agile)</U>>
+  node [fillcolor=lightpink]
+
+  "Aldori Dueling Mastery" [label=<\N<BR/>DEX 13>]
+  "Combat Mobility" [label=<\N<BR/>DEX 13>]
+  "Dodge" [label=<\N<BR/>DEX 13>]
+  "Double Slice" [label=<\N<BR/>DEX 15>]
+  "Fencing Grace" [label=<\N<BR/>DEX 13>]
+  "Greater Two-Weapon Fighting" [label=<\N<BR/>DEX 19<BR/>BAB +11>]
+  "Improved Two-Weapon Fighting" [label=<\N<BR/>DEX 17<BR/>BAB +6>]
+  "Piranha Strike" [label=<\N<BR/>DEX 13>]
+  "Slashing Grace" [label=<\N<BR/>DEX 13>]
+  "Two-Weapon Fighting" [label=<\N<BR/>DEX 15>]
+  "Weapon Finesse"
+
+subgraph cluster_shield_feats
+{
+  label=<<U>Shields</U>>
+  node [fillcolor=lightpink]
+
+  "Shield Proficiency" [label=<Shield<BR/>Proficiency>, fillcolor=lightgrey]
+  "Bashing Finish" [label=<\N<BR/>BAB +11>]
+  "Greater Shield Focus" [label=<\N<BR/>Fighter 8>]
+  "Missile Shield" [label=<\N<BR/>DEX 13>]
+  "Shield Bash"
+  "Shield Focus"
+  "Shield Master" [label=<\N<BR/>BAB +11>]
+  "Tower Shield Proficiency"
+}
 }
 
 subgraph combat_feats
@@ -124,78 +191,39 @@ subgraph combat_feats
   node [fillcolor=lightpink]
 
   "Agile Maneuvers"
-  "Aldori Dueling Mastery" [label=<\N<BR/>DEX 13>]
   "Armor Focus" [label=<\N<BR/>BAB +1>]
-  "Bashing Finish" [label=<\N<BR/>BAB +11>]
   "Blind Fight"
   "Blinding Critical" [label=<\N<BR/>BAB +15>]
-  "Bull Rush"
-  "Cleave"
-  "Cleaving Finish"
-  "Combat Expertise" [label=<\N<BR/>INT 13>]
-  "Combat Mobility" [label=<\N<BR/>DEX 13>]
   "Combat Reflexes"
-  "Cornugon Smash" [label=<\N<BR/>Persuasion 6>]
   "Critical Focus" [label=<\N<BR/>BAB +9>]
   "Critical Mastery" [label=<\N<BR/>Fighter 14>]
   "Crushing Blow"
   "Dazzling Display"
   "Defensive Combat Training"
   "Deflect Arrows" [label=<\N<BR/>DEX 13>]
-  "Dirty Trick" [label=<\N<BR/>INT 13>]
-  "Disarm" [label=<\N<BR/>INT 13>]
-  "Dodge" [label=<\N<BR/>DEX 13>]
-  "Double Slice" [label=<\N<BR/>DEX 15>]
-  "Dreadful Carnage" [label=<\N<BR/>STR 15<BR/>BAB +11>]
   "Exhausting Critical" [label=<\N<BR/>BAB +15>]
   "Exotic Weapon Proficiency" [label=<\N<BR/>BAB +1>]
-  "Fencing Grace" [label=<\N<BR/>DEX 13>]
-  "Fury's Fall"
-  "Great Cleave" [label=<\N<BR/>STR 13>]
   "Greater Blind Fight" [label=<\N<BR/>Perception 15>]
-  "Greater Bull Rush" [label=<\N<BR/>STR 13<BR/>BAB +6>]
-  "Greater Dirty Trick" [label=<\N<BR/>INT 13<BR/>BAB +6>]
-  "Greater Disarm" [label=<\N<BR/>INT 13<BR/>BAB +6>]
   "Greater Penetrating Strike" [label=<\N<BR/>Fighter 16>]
-  "Greater Shield Focus" [label=<\N<BR/>Fighter 8>]
-  "Greater Sunder Armor" [label=<\N<BR/>STR 13<BR/>BAB +6>]
-  "Greater Trip" [label=<\N<BR/>INT 13<BR/>BAB +6>]
-  "Greater Two-Weapon Fighting" [label=<\N<BR/>DEX 19<BR/>BAB +11>]
   "Greater Vital Strike" [label=<\N<BR/>BAB +16>]
   "Greater Weapon Focus" [label=<\N<BR/>Fighter 8>]
   "Greater Weapon Specialization" [label=<\N<BR/>Fighter 8>]
   "Hammer the Gap" [label=<\N<BR/>BAB +6>]
   "Improved Blind Fight" [label=<\N<BR/>Perception 10>]
   "Improved Unarmed Strike"
-  "Improved Cleaving Finish" [label=<\N<BR/>BAB +6>]
   "Improved Critical" [label=<\N<BR/>BAB +8>]
-  "Improved Two-Weapon Fighting" [label=<\N<BR/>DEX 17<BR/>BAB +6>]
   "Improved Vital Strike" [label=<\N<BR/>BAB +11>]
-  "Missile Shield" [label=<\N<BR/>DEX 13>]
   "Penetrating Strike" [label=<\N<BR/>Fighter 12>]
-  "Piranha Strike" [label=<\N<BR/>DEX 13>]
-  "Power Attack" [label=<\N<BR/>STR 13>]
   "Shatter Defenses" [label=<\N<BR/>BAB +6>]
-  "Shield Bash"
-  "Shield Focus"
-  "Shield Master" [label=<\N<BR/>BAB +11>]
   "Sickening Critical" [label=<\N<BR/>BAB +11>]
-  "Slashing Grace" [label=<\N<BR/>DEX 13>]
   "Staggering Critical" [label=<\N<BR/>BAB +13>]
-  "Sunder Armor" [label=<\N<BR/>STR 13>]
   "Stunning Fist"
-  "Throw Anything"
   "Tiring Critical" [label=<\N<BR/>BAB +13>]
-  "Trip" [label=<\N<BR/>INT 13>]
-  "Two-Weapon Fighting" [label=<\N<BR/>DEX 15>]
-  "Tower Shield Proficiency"
   "Vital Strike" [label=<\N<BR/>BAB +6>]
-  "Weapon Finesse"
   "Weapon Focus" [label=<\N<BR/>BAB +1>]
   "Weapon Specialization" [label=<\N<BR/>Fighter 4>]
 }
 
-"Shield Proficiency" [label=<Shield<BR/>Proficiency>, fillcolor=lightgrey, shape=octagon]
 "Shield Proficiency" -> "Tower Shield Proficiency"
 "Shield Proficiency" -> "Shield Focus"
 "Shield Proficiency" -> "Shield Bash"
@@ -259,6 +287,7 @@ subgraph combat_feats
 "Two-Weapon Fighting" -> "Improved Two-Weapon Fighting" -> "Greater Two-Weapon Fighting"
 "Vital Strike" -> "Improved Vital Strike" -> "Greater Vital Strike"
 "Weapon Focus" -> "Greater Weapon Focus"
+"Weapon Focus" -> "Weapon Specialization"
 "Weapon Specialization" -> "Greater Weapon Specialization"
 "Rapid Shot" -> "Manyshot"
 "Dazzling Display" -> "Shatter Defenses"
