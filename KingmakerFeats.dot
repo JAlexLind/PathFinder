@@ -40,8 +40,8 @@ subgraph cluster_spellcasting_feats
   "Augment Summoning"
   "Superior Summoning"
 
-  "Arcane Armor Training"
-  "Arcane Armor Mastery"
+  "Arcane Armor Training" [fillcolor=lightpink]
+  "Arcane Armor Mastery" [fillcolor=lightpink]
 
   "Metamagic (Empower Spell)"
   "Metamagic (Extend Spell)"
