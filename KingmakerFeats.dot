@@ -166,8 +166,8 @@ subgraph cluster_dex_combat_feats
   "Improved Two-Weapon Fighting" [label=<\N<BR/>DEX 17<BR/>BAB +6>]
   "Piranha Strike" [label=<\N<BR/>DEX 13>]
   "Slashing Grace" [label=<\N<BR/>DEX 13>]
-  "Two-Weapon Fighting" [label=<\N<BR/>DEX 15>]
   "Weapon Finesse"
+  "Two-Weapon Fighting" [label=<\N<BR/>DEX 15>]
 
 subgraph cluster_shield_feats
 {
@@ -216,26 +216,34 @@ subgraph cluster_critical_feats
   "Improved Critical" [label=<\N<BR/>BAB +8>]
 }
 
-subgraph combat_feats
+subgraph cluster_kung_fu_feats
 {
-  label=<<U>Combat Feats</U>>
+  label=<<U>Kung Fu Fighting</U>>
   node [fillcolor=lightpink]
 
-  "Agile Maneuvers"
-  "Armor Focus" [label=<\N<BR/>BAB +1>]
-  "Blind Fight"
-  "Combat Reflexes"
   "Crushing Blow"
-  "Defensive Combat Training"
   "Deflect Arrows" [label=<\N<BR/>DEX 13>]
-  "Greater Blind Fight" [label=<\N<BR/>Perception 15>]
-  "Greater Vital Strike" [label=<\N<BR/>BAB +16>]
-  "Hammer the Gap" [label=<\N<BR/>BAB +6>]
-  "Improved Blind Fight" [label=<\N<BR/>Perception 10>]
   "Improved Unarmed Strike"
-  "Improved Vital Strike" [label=<\N<BR/>BAB +11>]
   "Stunning Fist"
+}
+
+subgraph cluster_general_combat_feats
+{
+  label=<<U>Combat Feats (General)</U>>
+  node [fillcolor=lightpink]
+
+  "Armor Focus" [label=<\N<BR/>BAB +1>]
+  "Defensive Combat Training"
+  "Blind Fight"
+  "Improved Blind Fight" [label=<\N<BR/>Perception 10>]
+  "Greater Blind Fight" [label=<\N<BR/>Perception 15>]
+  "Hammer the Gap" [label=<\N<BR/>BAB +6>]
   "Vital Strike" [label=<\N<BR/>BAB +6>]
+  "Improved Vital Strike" [label=<\N<BR/>BAB +11>]
+  "Greater Vital Strike" [label=<\N<BR/>BAB +16>]
+
+  "Agile Maneuvers"
+  "Combat Reflexes"
 }
 
 "Shield Proficiency" -> "Tower Shield Proficiency"
