@@ -179,9 +179,9 @@ subgraph cluster_shield_feats
   "Greater Shield Focus" [label=<\N<BR/>Fighter 8>]
   "Missile Shield" [label=<\N<BR/>DEX 13>]
   "Shield Bash"
+  "Tower Shield Proficiency"
   "Shield Focus"
   "Shield Master" [label=<\N<BR/>BAB +11>]
-  "Tower Shield Proficiency"
 }
 }
 
