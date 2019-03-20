@@ -7,16 +7,19 @@ digraph Character
 
 subgraph cluster_bab
 {
-  label=<<U>BAB Progression</U>>
+  label=<<U>Progression</U>>
   node [shape=octagon, fillcolor=lightgrey]
-  "BAB +1" -> "BAB +4" -> "BAB +6" -> "BAB +9" -> "BAB +11" -> "BAB +13" -> "BAB +15" -> "BAB +16"
-}
-
-subgraph cluster_fighter
-{
-  label=<<U>Fighter Levels</U>>
-  node [shape=octagon, fillcolor=lightgrey]
+  "BAB +1" -> "BAB +4" -> "BAB +6" -> "BAB +9" -> "BAB +11" -> "BAB +13" -> "BAB +14" -> "BAB +15" -> "BAB +16"
   "Fighter 4" -> "Fighter 8" -> "Fighter 12" -> "Fighter 14" -> "Fighter 16"
+  "BAB +4" -> "Fighter 4" [constraint=false]
+  "Fighter 4" -> "BAB +6"
+  "BAB +6" -> "Fighter 8"
+  "Fighter 8" -> "BAB +9"
+  "BAB +11" -> "Fighter 12"
+  "Fighter 12" -> "BAB +13"
+  "BAB +14" -> "Fighter 14" [constraint=false]
+  "BAB +15" -> "Fighter 16"
+  "BAB +16" -> "Fighter 16" [constraint=false]
 }
 
 subgraph cluster_armors
