@@ -1,0 +1,94 @@
+digraph Character
+{
+  ratio=auto
+  rankdir=LR
+  newrank=true
+  node [shape=rectangle, color=black, style=filled, fillcolor=transparent]
+
+subgraph cluster_bab
+{
+  label=<<U>BAB Progression</U>>
+  node [shape=octagon, fillcolor=lightgrey]
+  "BAB +1" -> "BAB +4" -> "BAB +6" -> "BAB +9" -> "BAB +11" -> "BAB +13" -> "BAB +15" -> "BAB +16"
+}
+
+subgraph cluster_fighter
+{
+  label=<<U>Fighter Levels</U>>
+  node [shape=octagon, fillcolor=lightgrey]
+  "Fighter 4" -> "Fighter 8" -> "Fighter 12" -> "Fighter 14" -> "Fighter 16"
+}
+
+subgraph cluster_armors
+{
+  label=<<U>Armor Proficiencies</U>>
+  node [shape=rectangle, fillcolor=lightgrey]
+  "Light Armor" -> "Medium Armor" -> "Heavy Armor"
+}
+
+subgraph cluster_weapons
+{
+  label=<<U>Weapon Proficiencies</U>>
+  node [shape=rectangle, fillcolor=lightgrey]
+  "Simple Weapons"
+  "Martial Weapons"
+  "Shields"
+}
+
+subgraph cluster_teamwork_feats
+{
+  label=<<U>Teamwork</U>>
+  node [fillcolor=orchid]
+
+  "Outflank" [label=<\N<BR/>BAB +4>]
+  "BAB +4" -> "Outflank"
+
+  "Precise Strike" [label=<\N<BR/>DEX 13<BR/>BAB +1>]
+  "BAB +1" -> "Precise Strike"
+}
+
+subgraph cluster_spellcasting_feats
+{
+  label=<<U>Spellcasting</U>>
+  node [fillcolor=lightblue]
+
+  "Elemental Focus" -> "Greater Elemental Focus"
+  "Spell Focus" -> "Greater Spell Focus"
+  "Spell Penetration" -> "Greater Spell Penetration"
+  "(Conjuration)" [shape=oval, fillcolor=lightgrey]
+  "Spell Focus" -> "(Conjuration)" -> "Augment Summoning" -> "Superior Summoning"
+  "Arcane Armor Training" [fillcolor=lightpink]
+  "Arcane Armor Mastery" [fillcolor=lightpink]
+  "Light Armor" -> "Arcane Armor Training" [constraint=true]
+  "Medium Armor" -> "Arcane Armor Training" [constraint=false]
+  "Heavy Armor" -> "Arcane Armor Training" [constraint=false]
+  "Arcane Armor Training" -> "Arcane Armor Mastery"
+}
+
+subgraph cluster_archery
+{
+  label=<<U>Archery</U>>
+  node [fillcolor=lightpink]
+
+  "Point-Blank Shot" -> "Precise Shot"
+
+  "Deadly Aim" [label=<\N<BR/>DEX 13<BR/>BAB +1>]
+  "BAB +1" -> "Deadly Aim"
+
+  "Point-Blank Master" [label=<\N<BR/>Fighter 4>]
+  "Fighter 4" -> "Point-Blank Master"
+
+  "Clustered Shots" [label=<\N<BR/>BAB +6>]
+  "Precise Shot" -> "Clustered Shots"
+
+  "Rapid Shot"
+  "Manyshot" [label=<\N<BR/>BAB +6>]
+  "Rapid Shot" -> "Manyshot"
+  "BAB +6" -> "Manyshot"
+
+  "Improved Precise Shot" [label=<\N<BR/>DEX 19<BR/>BAB +11>]
+  "Precise Shot" -> "Improved Precise Shot"
+  "BAB +11" -> "Improved Precise Shot"
+}
+
+}
