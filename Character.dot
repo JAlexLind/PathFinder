@@ -26,16 +26,7 @@ subgraph cluster_armors
   "Light Armor" -> "Medium Armor" -> "Heavy Armor"
 }
 
-subgraph cluster_weapons
-{
-  label=<<U>Weapon Proficiencies</U>>
-  node [shape=rectangle, fillcolor=lightgrey]
-  "Simple Weapons"
-  "Martial Weapons"
-  "Shields"
-}
-
-subgraph cluster_teamwork_feats
+subgraph cluster_teamwork
 {
   label=<<U>Teamwork</U>>
   node [fillcolor=orchid]
@@ -47,7 +38,7 @@ subgraph cluster_teamwork_feats
   "BAB +1" -> "Precise Strike"
 }
 
-subgraph cluster_spellcasting_feats
+subgraph cluster_spellcasting
 {
   label=<<U>Spellcasting</U>>
   node [fillcolor=lightblue]
@@ -63,6 +54,43 @@ subgraph cluster_spellcasting_feats
   "Medium Armor" -> "Arcane Armor Training" [constraint=false]
   "Heavy Armor" -> "Arcane Armor Training" [constraint=false]
   "Arcane Armor Training" -> "Arcane Armor Mastery"
+}
+
+subgraph cluster_weaponry
+{
+  label=<<U>Weaponry</U>>
+  node [fillcolor=lightpink]
+
+  "Exotic Weapon Proficiency" [label=<\N<BR/>BAB +1>]
+  "BAB +1" -> "Exotic Weapon Proficiency"
+
+  "Weapon Focus" [label=<\N<BR/>BAB +1>]
+  "BAB +1" -> "Weapon Focus"
+
+  "Weapon Specialization" [label=<\N<BR/>Fighter 4>]
+  "Fighter 4" -> "Weapon Specialization"
+
+  "Dazzling Display"
+  "Weapon Focus" -> "Dazzling Display"
+
+  "Shatter Defenses" [label=<\N<BR/>BAB +6>]
+  "BAB +6" -> "Shatter Defenses"
+  "Dazzling Display" -> "Shatter Defenses"
+
+  "Greater Weapon Focus" [label=<\N<BR/>Fighter 8>]
+  "Fighter 8" -> "Greater Weapon Focus"
+  "Weapon Focus" -> "Greater Weapon Focus"
+
+  "Greater Weapon Specialization" [label=<\N<BR/>Fighter 8>]
+  "Fighter 8" -> "Greater Weapon Specialization"
+  "Weapon Specialization" -> "Greater Weapon Specialization"
+
+  "Penetrating Strike" [label=<\N<BR/>Fighter 12>]
+  "Fighter 12" -> "Penetrating Strike"
+
+  "Greater Penetrating Strike" [label=<\N<BR/>Fighter 16>]
+  "Fighter 16" -> "Greater Penetrating Strike"
+  "Penetrating Strike" -> "Greater Penetrating Strike"
 }
 
 subgraph cluster_archery
