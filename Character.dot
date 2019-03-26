@@ -9,6 +9,11 @@ subgraph cluster_bab
 {
   label=<<U>Progression</U>>
   node [shape=octagon, fillcolor=lightgrey]
+  "Fighter 4" [shape=oval, label=<(\N)>]
+  "Fighter 8" [shape=oval, label=<(\N)>]
+  "Fighter 12" [shape=oval, label=<(\N)>]
+  "Fighter 14" [shape=oval, label=<(\N)>]
+  "Fighter 16" [shape=oval, label=<(\N)>]
   "BAB +1" -> "BAB +4" -> "BAB +6" -> "BAB +9" -> "BAB +11" -> "BAB +13" -> "BAB +14" -> "BAB +15" -> "BAB +16"
   "Fighter 4" -> "Fighter 8" -> "Fighter 12" -> "Fighter 14" -> "Fighter 16"
   "BAB +4" -> "Fighter 4" [constraint=false]
@@ -17,6 +22,7 @@ subgraph cluster_bab
   "Fighter 8" -> "BAB +9"
   "BAB +11" -> "Fighter 12"
   "Fighter 12" -> "BAB +13"
+  "BAB +13" -> "Fighter 14"
   "BAB +14" -> "Fighter 14" [constraint=false]
   "BAB +15" -> "Fighter 16"
   "BAB +16" -> "Fighter 16" [constraint=false]
@@ -111,6 +117,7 @@ subgraph cluster_archery
 
   "Clustered Shots" [label=<\N<BR/>BAB +6>]
   "Precise Shot" -> "Clustered Shots"
+  "BAB +6" -> "Clustered Shots"
 
   "Rapid Shot"
   "Manyshot" [label=<\N<BR/>BAB +6>]
