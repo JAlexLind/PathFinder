@@ -24,6 +24,7 @@ subgraph cluster_bab
   "Fighter 12" -> "BAB +13"
   "BAB +13" -> "Fighter 14"
   "BAB +14" -> "Fighter 14" [constraint=false]
+  "Fighter 14" -> "BAB +15"
   "BAB +15" -> "Fighter 16"
   "BAB +16" -> "Fighter 16" [constraint=false]
 }
@@ -121,7 +122,7 @@ subgraph cluster_archery
 
   "Rapid Shot"
   "Manyshot" [label=<\N<BR/>BAB +6>]
-  "Rapid Shot" -> "Manyshot"
+  "Point-Blank Shot" -> "Rapid Shot" -> "Manyshot"
   "BAB +6" -> "Manyshot"
 
   "Improved Precise Shot" [label=<\N<BR/>DEX 19<BR/>BAB +11>]
