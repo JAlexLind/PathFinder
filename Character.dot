@@ -154,4 +154,59 @@ subgraph cluster_combat_int
   "BAB +6" -> "Greater Trip"
 }
 
+subgraph cluster_combat_dex
+{
+  label=<<U>Melee (Agile)</U>>
+  node [fillcolor=lightpink]
+
+  "Aldori Dueling Mastery" [label=<\N<BR/>DEX 13>]
+  "Weapon Focus" -> "Aldori Dueling Mastery"
+
+  "Dodge" [label=<\N<BR/>DEX 13>]
+  "Combat Mobility" [label=<\N<BR/>DEX 13>]
+  "Dodge" -> "Combat Mobility"
+
+  "Weapon Finesse"
+  "Fencing Grace" [label=<\N<BR/>DEX 13>]
+  "Weapon Finesse" -> "Fencing Grace"
+  "Slashing Grace" [label=<\N<BR/>DEX 13>]
+  "Weapon Finesse" -> "Slashing Grace"
+  "Piranha Strike" [label=<\N<BR/>DEX 13>]
+  "Weapon Finesse" -> "Piranha Strike"
+  "Weapon Finesse" -> "Aldori Dueling Mastery"
+
+  "Two-Weapon Fighting" [label=<\N<BR/>DEX 15>]
+  "Improved Two-Weapon Fighting" [label=<\N<BR/>DEX 17<BR/>BAB +6>]
+  "Greater Two-Weapon Fighting" [label=<\N<BR/>DEX 19<BR/>BAB +11>]
+  "Double Slice" [label=<\N<BR/>DEX 15>]
+  "Two-Weapon Fighting" -> "Improved Two-Weapon Fighting" -> "Greater Two-Weapon Fighting"
+  "Two-Weapon Fighting" -> "Double Slice"
+  "BAB +6" -> "Improved Two-Weapon Fighting"
+  "BAB +11" -> "Greater Two-Weapon Fighting"
+}
+
+subgraph cluster_shields
+{
+  label=<<U>Shields</U>>
+  node [fillcolor=lightpink]
+
+  "Shield Proficiency" [label=<Shield<BR/>Proficiency>, fillcolor=lightgrey]
+  "Tower Shield Proficiency" [label=<Tower Shield<BR/>Proficiency>, fillcolor=lightgrey]
+  "Shield Proficiency" -> "Tower Shield Proficiency"
+  
+  "Shield Focus"
+  "Greater Shield Focus" [label=<\N<BR/>Fighter 8>]
+  "Shield Proficiency" -> "Shield Focus" -> "Greater Shield Focus"
+
+  "Missile Shield" [label=<\N<BR/>DEX 13>]
+  "Shield Focus" -> "Missile Shield"
+
+  "Shield Bash"
+  "Shield Master" [label=<\N<BR/>BAB +11>]
+  "Bashing Finish" [label=<\N<BR/>BAB +11>]
+  "Shield Proficiency" -> "Shield Bash" -> "Shield Master" -> "Bashing Finish"
+  "Two-Weapon Fighting" -> "Shield Master"
+  "BAB +11" -> "Shield Master"
+}
+
 }
