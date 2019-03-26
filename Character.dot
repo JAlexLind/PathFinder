@@ -129,4 +129,28 @@ subgraph cluster_archery
   "BAB +11" -> "Improved Precise Shot"
 }
 
+subgraph cluster_combat_int
+{
+  label=<<U>Melee (Tactical)</U>>
+  node [fillcolor=lightpink]
+
+  "Combat Expertise" [label=<\N<BR/>INT 13>]
+
+  "Dirty Trick" [label=<\N<BR/>INT 13>]
+  "Greater Dirty Trick" [label=<\N<BR/>INT 13<BR/>BAB +6>]
+  "Combat Expertise" -> "Dirty Trick" -> "Greater Dirty Trick"
+  "BAB +6" -> "Greater Dirty Trick"
+
+  "Disarm" [label=<\N<BR/>INT 13>]
+  "Greater Disarm" [label=<\N<BR/>INT 13<BR/>BAB +6>]
+  "Combat Expertise" -> "Disarm" -> "Greater Disarm"
+  "BAB +6" -> "Greater Disarm"
+
+  "Trip" [label=<\N<BR/>INT 13>]
+  "Greater Trip" [label=<\N<BR/>INT 13<BR/>BAB +6>]
+  "Combat Expertise" -> "Trip" -> "Greater Trip"
+  "Trip" -> "Fury's Fall"
+  "BAB +6" -> "Greater Trip"
+}
+
 }
